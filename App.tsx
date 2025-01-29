@@ -12,7 +12,7 @@ import ProfileScreen from './screens/profile/ProfileScreen';
 const Stack = createNativeStackNavigator();
 
 const App = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
   return (
     <NavigationContainer>
       <Stack.Navigator>

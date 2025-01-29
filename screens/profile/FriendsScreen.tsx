@@ -53,6 +53,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
+    padding: 20,
   },
   searchBar: {
     height: 40,
@@ -60,7 +61,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 20,
     paddingLeft: 20,
-    margin: 20,
+    marginBottom: 20,
   },
   friendItem: {
     flexDirection: 'row',

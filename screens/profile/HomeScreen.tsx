@@ -1,7 +1,7 @@
-import React from 'react'
-import IoIcon from 'react-native-vector-icons/Ionicons'
+import React from 'react';
+import IoIcon from 'react-native-vector-icons/Ionicons';
 import { View, Text, ScrollView, Image, StyleSheet } from 'react-native';
-import FaIcon from 'react-native-vector-icons/FontAwesome'
+import FaIcon from 'react-native-vector-icons/FontAwesome';
 
 const stories = [
   { id: 0, username: 'user1', imageUrl: 'https://placehold.co/600x400.png' },
@@ -31,7 +31,7 @@ const posts = [
 
 const HomeScreen = () => {
   return (
-    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'white' }}>
+    <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.title}>Connectify</Text>
         <View style={styles.iconContainer}>
@@ -80,27 +80,27 @@ const HomeScreen = () => {
 }
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'white',
+  },
   header: {
-    display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: 20,
-    height: '7%'
   },
   title: {
     fontSize: 20,
     color: 'blue',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
   iconContainer: {
-    display: 'flex',
     flexDirection: 'row',
     gap: 20,
   },
   storyScrollView: {
     padding: 10,
-    height: '13%'
   },
   storyItem: {
     alignItems: 'center',
@@ -118,10 +118,6 @@ const styles = StyleSheet.create({
     position: 'absolute',
     bottom: 20,
     right: 4,
-  },
-  addStoryText: {
-    color: 'white',
-    fontSize: 15,
   },
   postsScrollView: {
     padding: 10,
@@ -141,14 +137,14 @@ const styles = StyleSheet.create({
     marginTop: 5,
   },
   postReactionContainer: {
-    display: 'flex',
     flexDirection: 'row',
     gap: 5,
-    justifyContent: 'flex-start'
+    justifyContent: 'flex-start',
   },
   postReaction: {
-    display: 'flex', flexDirection: 'row', gap: 2
-  }
+    flexDirection: 'row',
+    gap: 2,
+  },
 });
 
 export default HomeScreen;
